@@ -1,7 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useEffect, useState } from 'react'
 
 function App() {
+
+  useEffect(() => {
+    const apicall = async () => {try{
+        const response = await fetch("/api")
+
+        if (response.status !== 200){
+          throw new Error()
+        }
+
+        else{
+          console.log("api call was success")
+          console.log(response)
+          const data = await response.json()
+          console.log(data)
+        }
+
+    } catch(error){
+      console.log(error)
+    }}
+    apicall()
+  }, [])
+
+
   return (
     <div className="App">
       <header className="App-header">
