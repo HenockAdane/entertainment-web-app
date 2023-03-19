@@ -1,0 +1,325 @@
+.Sidebar{
+    // border: 1px solid rgb(255, 0, 0);
+    // position: relative;
+    // position: unset;
+    // top: 0;
+    // left: 0;
+    background-color: #161D2F;
+    border-radius: 0 10px;
+    width: 96px;
+    max-width: 100%;
+    height: 760px;
+    max-height: 100%;
+    margin: 15px 0 0 0;
+    // border: 1px solid rgb(51, 255, 0);
+    // margin: 0 0 0 36px;
+
+
+    // flex-direction: column;
+    z-index: 310;
+
+    
+    .logo{
+        // margin: 68px 0 100px 0;
+        display: flex;
+        justify-content: center;
+        width: 35px;
+        margin: 0 auto;
+        // border: 1px solid red;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .nav{
+        // border: 1px solid yellow;
+        width: 320px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        // border: 1px solid red;
+    }
+
+    button,a{
+        margin: 15px 0;
+    }
+
+    .signIn{
+        a{
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            transition: all ease-in 0.2s;
+
+            &:hover{
+                text-decoration: underline;
+                color: white;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .avatar{
+        display: flex;
+        align-items: center;
+        // position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        // width: 100%;
+        // padding: 10px;
+        // border: 1px solid red;
+        width: 35px;
+        margin: 0 auto;
+
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    // svg{
+    //     height: 100%;
+    //     display: block;
+    // }
+
+
+
+
+    
+
+
+
+}
+
+@media (max-width: 1000px){
+    .Sidebar{
+        width: 100%;
+        height: unset;
+        max-height: unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: 10px;
+        margin: 0;
+        // margin: 20px;
+        position:sticky;
+        top: 0;
+
+        .logo, .avatar{
+            margin: unset;
+        }
+
+        .nav{
+            flex-direction: unset;
+        }
+
+        .signIn{
+            width: unset;
+        }
+    }
+}
+
+// @media (max-width: 900px){
+//     .Sidebar{
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//         position: sticky;
+
+//         height: 96px;
+//         max-height: unset;
+//         width: 100%;
+//         padding: 10px;
+        
+//         .logo{
+//             margin: unset;
+//         }
+
+//         .nav{
+//             width: unset;
+//             flex-direction: row;
+            
+//         }
+
+//         button,a{
+//             margin: 0 15px;
+//         }
+
+//         .avatar{
+//             position: unset;
+//             // border: 1px solid rgb(0, 255, 98);
+//             width: unset;
+//         }
+//     }
+// }
+
+
+// .Sidebar{
+//     border: 1px solid black;
+//     max-width: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     background-color: #161D2F;
+//     border-radius: 0 10px;
+//     display: flex;
+//     flex-direction: column;
+//     z-index: 310;
+
+//     .phoneHeader{
+//         display: none;
+//         padding: 10px;
+//     }
+        
+//     .container{
+//         max-width: 100%;
+//         width: 96px;
+//         height: 760px;
+//         // max-height: 100%;
+//         // border: 1px solid red;
+//         left: 0;
+//         top: 0;
+//         background-color: #161D2F;
+
+
+        // .logo{
+        //     margin: 68px 0 100px 0;
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+//         .nav{
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: space-between;
+//             height: 200px;
+//             max-height: 100%;
+//         }
+
+        // .avatar{
+        //     position: absolute;
+        //     bottom: 0;
+        //     display: flex;
+        //     justify-content: center;
+        //     width: 100%;
+        //     padding: 10px;
+            
+
+        //     img{
+        //         width: 50px;
+        //     }
+
+        // }
+
+    //     .signIn{
+    //         // margin: 15px 0;
+    //         text-align: center;
+    //         // font-size: 36px;
+    //         color: white;
+    //         text-decoration: none;
+    //         transition: all ease-in 0.2s;
+
+    //         &:hover{
+    //             text-decoration: underline;
+    //             color: white;
+    //             transform: scale(1.1);
+    //         }
+    //     }
+    // }
+
+
+// }
+
+// @media (max-width: 900px){
+//     .Sidebar{
+//         width: 100%;
+//         position: sticky;
+
+
+//         .phoneHeader{
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             // border: 1px solid red;
+
+//         }
+
+//         .container{
+//             // display: none;
+//             position: absolute;
+//         }
+        
+
+//         .menu{
+//             position: relative;
+//             display: flex;
+//             justify-content: center;
+//             align-items:center;
+//             width: 40px;
+//             height: 40px;
+//             cursor: pointer;
+//             transition: all .2s ease-in-out;
+//             // border: 1px solid;
+//             z-index: 6;
+
+//             .burger{
+//             width:20px;
+//             height: 3px;
+//             background: #5a698f;
+//             transition: all .2s ease-in-out;
+//             border-radius: 20px;
+
+//                 &::before, &::after{
+//                     content: "";
+//                     position:absolute;
+//                     width:20px;
+//                     height: 3px;
+//                     background: #5a698f;
+//                     transition: all .2s ease-in-out;
+//                     border-radius: 20px;
+
+//                 }
+
+//                 &::before{
+//                     transform: translateY(-9px);
+//                 }
+
+//                 &::after{
+//                     transform: translateY(9px);
+//                 }
+//             }
+
+            
+
+            
+
+
+//         }
+
+//         .open{
+//             .burger{
+//                 transform: translateX(-50px);
+//                 background: transparent;
+//                 box-shadow:none;      
+                
+//                 &::before{
+//                     transform: rotate(45deg) translate(35px,-35px);
+//                 }
+
+//                 &::after{
+//                     transform: rotate(-45deg) translate(35px, 35px);
+//                 }
+//             }
+
+
+//         }
+//     }
+// }

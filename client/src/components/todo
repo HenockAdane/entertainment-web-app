@@ -1,0 +1,12 @@
+1)Fix confirmation Page
+2)fix jwt issue with users randomly not being auth
+
+3) form errors fix
+
+
+check:
+If the Regex are correct
+
+
+1)do form validation for change password on server side signin keepsignedin
+

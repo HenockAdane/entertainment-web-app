@@ -1,0 +1,21 @@
+.Icons{
+    transition: all ease-in 0.2s;
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.Btn{
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #5a698f;
+}

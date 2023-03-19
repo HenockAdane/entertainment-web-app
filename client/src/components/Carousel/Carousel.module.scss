@@ -1,0 +1,77 @@
+.Carousel{
+    color: white;
+    // border: 1px solid red;
+    // max-width: 100%;
+    // max-width: 1250px;
+    max-width: 100%;
+    width: 1250px;
+
+    .spinner{
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+    .mySwiper{
+        // max-width: 1250px;
+        width: 100%;
+        margin: 20px 0;
+
+        .swiperSlide{
+            // border: 1px solid red;
+            // padding: 5px;
+            // min-width: 280px;
+
+            // width: 100%;
+            margin: 0 10px;
+        }
+    }
+
+    // .flexe{
+    //     display: flex;
+    //     flex-wrap: nowrap;
+    //     // grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    //     // gap: 10px 0;
+    //     // transform: scale(0);
+    //     // animation: scaleUp 0.5s ease-in-out forwards;
+    //     // padding: 10px 0;
+        
+
+    // }
+
+
+    h1{
+        color: white;
+        font-size: 38px;
+    }
+    
+    // .slideInfo{
+    //     color: white;
+    //     position:fixed;
+    //     top: 10px;
+    //     right: -100%;
+    //     z-index: 1;
+
+    //     padding: 10px;
+    //     background-color: #FC4747;
+    //     // border-radius: 15px 0 0 15px;
+
+        
+    //     // animation: slideAndAppear 1s ease-in-out forwards;
+
+    // }
+
+}
+
+
+@keyframes scaleUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,114 @@
+.ConfirmAccount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    background-color: #10141E;
+    color: white;
+    // border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .spinner{
+        padding: 10px;
+        margin: 10px 0;        
+        z-index: 1000;
+    }
+
+    .logo{
+        margin: 30px 0;
+    }  
+
+    input{
+        color: white;
+    }
+
+
+    h2{
+        margin: 15px 0;
+        text-align: center;
+        font-weight: 300;
+        font-size: 36px;
+    }
+
+    .alert{
+        color: red;
+        margin: 0 0 10px 0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        max-width: 100%;
+        background-color: #161D2F;
+        padding: 0 10px 10px 10px;
+        border-radius: 20px;
+        border: 1px solid red;
+
+        
+
+        .rememberMe{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            input{
+                width: unset;
+                background-color: transparent;
+                margin: 0 5px;
+                cursor: pointer;
+            }
+    
+            label{
+                opacity: 70%;
+            }
+        }
+    }
+
+    .prompts{
+        width: 100%;
+    }
+
+    .submitInput{
+        cursor: pointer;
+        background-color: #FC4747;
+        color: white;
+        font-weight: 300;
+        transition: all ease-in 0.1s;
+        padding: 10px;
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 6px;
+
+        &:hover{
+            background-color: #FFFFFF;
+            color: #161D2F;
+        }
+    }
+
+    // span{
+    //     opacity: 70%;
+    // }
+
+    .resend{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+        .submitInput{
+            width: unset;
+            margin: unset;
+        }
+        display: flex;
+        align-items: center;
+
+    }
+}

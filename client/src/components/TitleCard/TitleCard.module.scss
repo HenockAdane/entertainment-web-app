@@ -1,0 +1,140 @@
+.TitleCard{
+    max-width: 100%;
+    margin: 0 0 15px 0;
+    cursor: pointer;
+    // border: 1px solid red;
+
+    .slideInfo{
+        color: white;
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        z-index: 1;
+
+        padding: 10px;
+        background-color: #7747fc;
+        // border-radius: 15px 0 0 15px;
+//#7747fc        
+        // animation: slideAndAppear 1s ease-in-out forwards;
+
+    }
+
+
+    h3, span{
+        color: white;
+    }
+
+
+    .playBtn{
+        position: absolute;
+        display: none;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 117px;
+        padding: 7px;
+        max-width: 100%;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(90, 105, 143, 0.4);
+        border-radius: 20px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+
+
+        &:hover{
+            background-color: rgba(90, 105, 143, 0.7);
+
+        }
+
+        
+    }
+
+    &:hover{
+        .playBtn{
+            display: flex;
+        }
+    }
+
+
+
+    .thumbnail{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        overflow: hidden;
+
+        .bookmark{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: #979797af;
+            border: none;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover{
+                background-color: #525252;
+
+
+            }
+
+            
+            img{
+
+
+            }
+        }
+
+        .img{
+            width: 100%;
+            border-radius: 15px;
+            transition: 0.1s all ease-in;
+        }
+
+        &:hover{
+
+            .img{
+                transform: scale(1.1);
+            }
+        }
+
+        
+    }
+
+    .details{
+        display: flex;
+        align-items: center;
+        margin: 2px 0;
+
+
+        span{
+            font-size: 14px;
+        }
+
+        .dots{
+            border-radius: 50%;
+            width: 5px;
+            height: 5px;
+            background-color: white;
+        }
+
+        div{
+            margin: 0 10px
+        }
+        
+        img{
+            margin: 0 10px 0 0;
+        }
+    }
+
+
+}
