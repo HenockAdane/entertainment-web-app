@@ -3,7 +3,6 @@ const path = require("path")
 const cors = require("cors")
 const cookies = require("cookie-parser")
 const mongoose = require("mongoose")
-const titleModel = require("./api/Models/Title")
 
 
 const app = express()
