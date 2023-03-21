@@ -1,4 +1,3 @@
-require("dotenv").config()
 const express = require("express")
 const path = require("path")
 const cors = require("cors")
@@ -51,23 +50,23 @@ async function runServer(){
     
     app.listen(PORT, console.log("connected"))
 
-    const title  = new titleModel(
-      {
-        "title": "Below Echo",
-        "thumbnail": {
-          "regular": {
-            "small": "./assets/thumbnails/below-echo/regular/small.jpg",
-            "medium": "./assets/thumbnails/below-echo/regular/medium.jpg",
-            "large": "./assets/thumbnails/below-echo/regular/large.jpg"
-          }
-        },
-        "year": 2016,
-        "category": "TV Series",
-        "rating": "PG",
+    // const title  = new titleModel(
+    //   {
+    //     "title": "Below Echo",
+    //     "thumbnail": {
+    //       "regular": {
+    //         "small": "./assets/thumbnails/below-echo/regular/small.jpg",
+    //         "medium": "./assets/thumbnails/below-echo/regular/medium.jpg",
+    //         "large": "./assets/thumbnails/below-echo/regular/large.jpg"
+    //       }
+    //     },
+    //     "year": 2016,
+    //     "category": "TV Series",
+    //     "rating": "PG",
         
-        "isTrending": false
-      }
-    )
+    //     "isTrending": false
+    //   }
+    // )
 
     // title.save()
 
