@@ -12,16 +12,18 @@ const PORT = process.env.PORT || 3001
 
 const apiRoutes = require("./api/routes/index")
 
-if (process.env.NODE_ENV === "production"){
-    app.use(express.static("client/build"))
-    app.get("*", (req,res) => {
-      req.sendFile(path.resolve(__dirname, "client/build", "index.html"))
-    })
-}
+
 
 // app.use(cors())
 
 async function runServer(){
+
+    if (process.env.NODE_ENV === "production"){
+        app.use(express.static("client/build"))
+        app.get("*", (req,res) => {
+            res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+        })
+    }
 
     try{
         await mongoose.connect(process.env.DBURI, { useNewUrlParser: true, useUnifiedTopology: true }).catch(err => {
@@ -50,25 +52,6 @@ async function runServer(){
     
     app.listen(PORT, console.log("connected"))
 
-    // const title  = new titleModel(
-    //   {
-    //     "title": "Below Echo",
-    //     "thumbnail": {
-    //       "regular": {
-    //         "small": "./assets/thumbnails/below-echo/regular/small.jpg",
-    //         "medium": "./assets/thumbnails/below-echo/regular/medium.jpg",
-    //         "large": "./assets/thumbnails/below-echo/regular/large.jpg"
-    //       }
-    //     },
-    //     "year": 2016,
-    //     "category": "TV Series",
-    //     "rating": "PG",
-        
-    //     "isTrending": false
-    //   }
-    // )
-
-    // title.save()
 
     } catch(error){
         console.log(error)
