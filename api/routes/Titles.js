@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
-const controller = require("../Controller/TitleController")
-const verifyJWT = require("../Controller/VerifyJWT")
+const controller = require("api/controller/TitleController.js")
+const verifyJWT = require("api/controller/VerifyJWT.js")
 
 router.get("/", controller.getAll)
 router.get("/search/:q", controller.getSearchQuery)

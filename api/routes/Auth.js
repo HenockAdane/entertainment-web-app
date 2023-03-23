@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const controller = require("api/controller/AuthController.js")
-const verifyJWT = require("../Controller/VerifyJWT")
+const verifyJWT = require("api/controller/VerifyJWT.js")
 
 router.post("/signup", controller.signUp)
 router.post("/signin", controller.signIn)
