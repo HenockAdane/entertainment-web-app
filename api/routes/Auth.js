@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const controller = require("../Controller/AuthController")
+const controller = require("api/controller/AuthController.js")
 const verifyJWT = require("../Controller/VerifyJWT")
 
 router.post("/signup", controller.signUp)
