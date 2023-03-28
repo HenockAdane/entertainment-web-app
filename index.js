@@ -24,14 +24,14 @@ async function runServer(){
         })
     }
 
-    try{
-        await mongoose.connect(process.env.DBURI, { useNewUrlParser: true, useUnifiedTopology: true }).catch(err => {
-        console.log(err)
-        console.log('Something went wrong with the db connection.')
+    // try{
+    //     await mongoose.connect(process.env.DBURI, { useNewUrlParser: true, useUnifiedTopology: true }).catch(err => {
+    //     console.log(err)
+    //     console.log('Something went wrong with the db connection.')
 
        
         
-    });
+    // });
 
     
     
@@ -52,9 +52,9 @@ async function runServer(){
     app.listen(PORT, console.log("connected"))
 
 
-    } catch(error){
-        console.log(error)
-    }
+    // } catch(error){
+    //     console.log(error)
+    // }
 
 
 }
