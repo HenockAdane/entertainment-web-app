@@ -1,8 +1,8 @@
 const express = require("express")
 const router = express.Router()
 // const Products = require("./Products")
-const Auth = require("api/routes/Auth.js")
-const Titles = require("api/routes/Titles.js")
+const Auth = require("./Auth")
+const Titles = require("./Titles")
 // const Payment = require("./Payment")
 
 // router.use("/products", Products)

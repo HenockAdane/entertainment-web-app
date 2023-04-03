@@ -1,6 +1,6 @@
-const userModel = require("api/models/User.js")
+const userModel = require("../Models/User")
 const bcrypt = require("bcrypt")
-const sendEmail = require("api/controller/SendEmail.js")
+const sendEmail = require("../Controller/SendEmail")
 const jwt = require('jsonwebtoken')
 // const verifyJWT = require("../Controller/VerifyJWT")
 
@@ -176,13 +176,13 @@ class AuthController {
 
                     const accessToken = jwt.sign(
                         {userID: user._id}, 
-                        process.env.SECRET,
+                        process.env.SECRET_1,
                         { expiresIn: "5m" }
                     )
 
                     const refreshToken = jwt.sign(
                         {userID: user._id},
-                        process.env.SECRET_5,
+                        process.env.SECRET_2,
                         {expiresIn: "12h"}
                     )
 
@@ -282,7 +282,7 @@ class AuthController {
                         //creating a access JWT
                         const accessToken = jwt.sign(
                             {userID: user._id}, 
-                            process.env.SECRET,
+                            process.env.SECRET_1,
                             { expiresIn: "5s" }
                         )
 
@@ -290,7 +290,7 @@ class AuthController {
                         const refreshToken = jwt.sign(
                             {userID: user._id,
                             keepSignedIn: keepSignedIn},
-                            process.env.SECRET_5,
+                            process.env.SECRET_2,
                             {expiresIn: keepSignedIn ? "7d" : "12h"}
                         )
                             
