@@ -1,8 +1,5 @@
-const titleModel = require("../Models/Title")
-const bcrypt = require("bcrypt")
-const sendEmail = require("../Controller/SendEmail")
-const jwt = require('jsonwebtoken')
-const userModel = require("../Models/User")
+const titleModel = require("api/models/Title.js")
+const userModel = require("api/models/User.js")
 
 
 class TitleController {

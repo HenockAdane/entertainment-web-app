@@ -1,8 +1,9 @@
-const userModel = require("../Models/User")
+const userModel = require("api/models/User.js")
 const bcrypt = require("bcrypt")
-const sendEmail = require("../Controller/SendEmail")
+const sendEmail = require("api/controller/SendEmail")
 const jwt = require('jsonwebtoken')
 // const verifyJWT = require("../Controller/VerifyJWT")
+// const Titles = require("api/routes/Titles.js")
 
 
 let tokens = []//{token:"£"£$34545, userID: 1234}
